@@ -1,0 +1,40 @@
+{
+    "constituency": {
+        "name": "Entenhausen",
+        "responsible": "Donald Duck"
+    },
+    "first_vote": [
+        {
+            "id": "p1",
+            "name": "Partei 1",
+            "num_votes": 1424
+        },
+        {
+            "id": "p2",
+            "name": "Partei 2",
+            "num_votes": 2423
+        },
+        {
+            "id": "p3",
+            "name": "Die dritte Partei",
+            "num_votes": 2
+        }
+    ],
+    "second_vote": [
+        {
+            "id": "p1",
+            "name": "Partei 1",
+            "num_votes": 322
+        },
+        {
+            "id": "p2",
+            "name": "Partei 2",
+            "num_votes": 3242
+        },
+        {
+            "id": "p4",
+            "name": "4. Partei",
+            "num_votes": 5000
+        }
+    ]
+}

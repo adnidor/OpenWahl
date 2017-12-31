@@ -1,0 +1,69 @@
+Ideen für verwendete Dateiformate
+
+- Signaturen sollten mit GPG oder S/MIME erstellt werden
+
+S/MIME bietet eine PKI mit der jedes Wahllokal ein vom Wahlleiter ausgestellten Zertifikat zum signen bekommen kann.
+GPG hat ein Web of Trust, es ist schwer das in dieser Situation auszunutzen.
+
+S/MIME erscheint die bessere Wahl zu sein.
+
+- JSON basiert
+
+Vorteile:
+    - kleines Format
+    - Parser für alle Programmiersprachen
+Nachteile:
+    - Kann, wenn minimized, schwer zu lesen sein
+
+- YAML basiert
+
+Vorteile:
+    - Definierter Whitespace
+    - Parser für viele Programmiersprachen
+Nachteile:
+    - "Ungewöhnliches" Format
+    - viele "reserved characters"
+
+- XML basiert
+
+Vorteile:
+    - festes Schema
+    - Parser für alle Programmiersprachen
+Nachteile:
+    - Viel zu viel Overhead
+    - Schwer zu lesen
+
+
+- YAML scheint am besten zu sein
+
+
+Gespeichert werden muss:
+- Name des Wahlkreises
+- Liste der Parteien (Erst- und Zweitstimme)
+- Anzahl Stimmen für die einzelnen Parteien
+- Name des Verantwortlichen
+
+
+Vorschlag: Baumstruktur:
+
+|----- Wahlkreis
+|    |--Name
+|    |--Verantwortlicher
+|
+|----- Erststimme
+|    |---partei_id
+|    |  |--Name
+|    |  |--Anzahl Stimmen
+|    |---partei_id
+|    |  |--Name
+|    |  |--Anzahl Stimmen
+|    |---...
+|
+|----- Zweitstimme
+     |---partei_id
+     |  |--Name
+     |  |--Anzahl Stimmen
+     |---partei_id
+     |  |--Name
+     |  |--Anzahl Stimmen
+     |---...

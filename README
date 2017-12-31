@@ -1,0 +1,11 @@
+Dieses Repository soll einmal eine FOSS Wahlsoftware enthalten, die die selbe Funktion wie PC-Wahl erfüllt, allerdings Freie Software und damit für alle einsehbar ist.
+
+Die Aufgabenliste ist folgende:
+- Gezählte Stimmen erfassen
+- Die erfassen Stimmen signieren und exportieren (Menschen- und Maschinenlesbar)
+- Exportierte Stimmen von mehreren Wahllokalen/Wahlbezirken/... einlesen, verifizieren, kombinieren und neu exportieren
+- Statistiken aus den Daten erstellen
+
+Im Moment ist die eigentliche Software nur eine Idee, dieses Repo eine Konzeptsammlung.
+
+Wenn du Ideen hast oder mithelfen willst, bitte ein Issue aufmachen oder eine Email an me (at) adnidor.de schreiben.
